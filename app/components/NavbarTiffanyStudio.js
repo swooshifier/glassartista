@@ -1,7 +1,5 @@
 'use client'
 
-'use client'
-
 import {
     Navbar,
     NavbarBrand,
@@ -18,20 +16,18 @@ import {
 import Link from "next/link";
 
 
-import {PiAcornFill, PiFlowerFill, PiFlowerTulipBold, PiFlowerTulipFill} from "react-icons/pi";
+import {PiAcornFill, PiFlowerFill, PiFlowerTulipFill, PiFlower} from "react-icons/pi";
 import {GiChestnutLeaf, GiCurlingVines, GiDragonfly, GiFairyWings, GiLilyPads} from "react-icons/gi";
 import {IoRose} from "react-icons/io5";
 import {LuLamp, LuLampFloor} from "react-icons/lu";
 import {IoIosGrid} from "react-icons/io";
 import {useState} from "react";
 
-import {motion} from "motion/react"
 import {AiFillInstagram} from "react-icons/ai";
-import {RiFacebookBoxFill, RiInstagramFill, RiMailFill} from "react-icons/ri";
-import {ImMail4} from "react-icons/im";
+import {RiMailFill} from "react-icons/ri";
 import {usePathname, useRouter, useSearchParams} from "next/navigation";
 import {MdLocalFlorist} from "react-icons/md";
-import {FaArrowAltCircleLeft, FaChevronDown, FaFacebookSquare, FaPhoneAlt} from "react-icons/fa";
+import {FaArrowAltCircleLeft, FaChevronDown, FaFacebookSquare, FaPhoneAlt, FaPalette} from "react-icons/fa";
 
 
 export default function NavbarTiffanyStudio() {
@@ -82,6 +78,8 @@ export default function NavbarTiffanyStudio() {
             lampDragonfly: 'Dragonfly Tiffany lámpa',
             lampTulip: 'Tulip Tiffany lámpa',
             lampLittlePeony: 'Kis Peony Tiffany lámpa',
+            lampArtNouveau: 'Art Nouveau Tiffany lámpa',
+            lampPeony2: 'Peony Tiffany lámpa',
             // available categories
             availableGeometric: 'Rendelhető geometrikus Tiffany lámpák',
             availableTable: 'Rendelhető asztali Tiffany lámpák',
@@ -111,6 +109,8 @@ export default function NavbarTiffanyStudio() {
             lampDragonfly: 'Libelle Tiffany Lampe',
             lampTulip: 'Tulip Tiffany Lampe',
             lampLittlePeony: 'Kleine Peony Tiffany Lampe',
+            lampArtNouveau: 'Art Nouveau Tiffany Lampe',
+            lampPeony2: 'Peony Tiffany Lampe',
             // available categories
             availableGeometric: 'Bestellbare geometrische Tiffany-Lampen',
             availableTable: 'Bestellbare Tisch-Tiffany-Lampen',
@@ -140,6 +140,8 @@ export default function NavbarTiffanyStudio() {
             lampDragonfly: 'Dragonfly Tiffany Lamp',
             lampTulip: 'Tulip Tiffany Lamp',
             lampLittlePeony: 'Little Peony Tiffany Lamp',
+            lampArtNouveau: 'Art Nouveau Tiffany Lamp',
+            lampPeony2: 'Peony Tiffany Lamp',
             // available categories
             availableGeometric: 'Available geometric Tiffany lamps',
             availableTable: 'Available table Tiffany lamps',
@@ -388,6 +390,10 @@ export default function NavbarTiffanyStudio() {
                                               onClick={() => handleLampDropdownClick('tulip')}>{t.lampTulip}</DropdownItem>
                                 <DropdownItem key="little_peony" className='border-2 border-gray-200' startContent={<MdLocalFlorist size={20}/>}
                                               onClick={() => handleLampDropdownClick('little_peony')}>{t.lampLittlePeony}</DropdownItem>
+                                <DropdownItem key="art_nouveau" className='border-2 border-gray-200' startContent={<FaPalette size={20}/>}
+                                              onClick={() => handleLampDropdownClick('art_nouveau')}>{t.lampArtNouveau}</DropdownItem>
+                                <DropdownItem key="peony2" className='border-2 border-gray-200' startContent={<PiFlower size={20}/>}
+                                              onClick={() => handleLampDropdownClick('peony2')}>{t.lampPeony2}</DropdownItem>
                             </DropdownSection>
                             <DropdownSection showDivider title={t.availableLamps} classNames={{
                                 group: "flex flex-col gap-2"
@@ -534,6 +540,10 @@ export default function NavbarTiffanyStudio() {
                                           onClick={() => handleLampDropdownClick('tulip')}>{t.lampTulip}</DropdownItem>
                             <DropdownItem key="little_peony" startContent={<MdLocalFlorist size={20}/>}
                                           onClick={() => handleLampDropdownClick('little_peony')}>{t.lampLittlePeony}</DropdownItem>
+                            <DropdownItem key="art_nouveau" startContent={<FaPalette size={20}/>}
+                                          onClick={() => handleLampDropdownClick('art_nouveau')}>{t.lampArtNouveau}</DropdownItem>
+                            <DropdownItem key="peony2" startContent={<PiFlower size={20}/>}
+                                          onClick={() => handleLampDropdownClick('peony2')}>{t.lampPeony2}</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
 

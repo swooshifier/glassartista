@@ -14,6 +14,7 @@
     "@heroui/theme": "^2.4.18-beta.5",
     "@tabler/icons-react": "^3.34.1",
     "@tailwindcss/postcss": "^4.1.11",
+    "@vercel/analytics": "^2.0.1",
     "animate.css": "^4.1.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.0",

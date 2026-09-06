@@ -14,7 +14,7 @@ import {
     GiLilyPads,
     GiWindowBars
 } from "react-icons/gi";
-import {IoRose} from "react-icons/io5";
+import { BsDoorOpenFill } from "react-icons/bs";
 import {Button} from "@heroui/react";
 import {FaArrowAltCircleDown, FaArrowAltCircleUp} from "react-icons/fa";
 import {MdChurch, MdLocalFlorist} from "react-icons/md";
@@ -31,6 +31,7 @@ const PROJECTS_META = [
     {key: "window", icon: GiWindowBars, refIdx: 3},
     {key: "ceiling", icon: BiVerticalTop, refIdx: 4},
     {key: "ecclesial", icon: MdChurch, refIdx: 5},
+    {key: "entranceDoor", icon: BsDoorOpenFill, refIdx: 6},
 ];
 
 const TEXTS = {
@@ -182,6 +183,14 @@ const TEXTS = {
             { src: "/glassartista/ecclesial/ecclesial-7.jpg" },
             { src: "/glassartista/ecclesial/ecclesial-8.jpg" },
         ],
+        entranceDoor: [
+            {title: "Klasszikus mintázatú bejárati ajtó", src: "/glassartista/entranceDoor/entranceDoor-1.jpg"},
+            {paragraph: "Ez a különleges díszüveg-kompozíció egy műemlék épület elegáns lépcsőházába készült.", src: "/glassartista/entranceDoor/entranceDoor-2.jpg"},
+            {paragraph: "Az épület külső homlokzatának világoskék színvilágához igazodva terveztem meg és készítettem el a bejárati ajtó ólomüveg betéteit, valamint a hozzájuk harmonikusan kapcsolódó felülvilágító és oldalvilágító üvegelemeket.", src: "/glassartista/entranceDoor/entranceDoor-3.jpg"},
+            {paragraph: "A klasszikus mintázat és a visszafogott színvilág egyaránt az épület eredeti karakterét és hangulatát hivatott tovább erősíteni.", src: "/glassartista/entranceDoor/entranceDoor-4.jpg"},
+            {paragraph: "A főbejárat felett elhelyezkedő körablak szintén az én munkám, amely formájával és színvilágával szerves egységet alkot az ajtó üvegbetéteivel.", src: "/glassartista/entranceDoor/entranceDoor-5.jpg"},
+            {paragraph: "A kompozíció elkészítéséhez a csodálatos árnyalatokban elérhető Spectrum üvegeket használtam, elsősorban kék, szürke és fehér tónusokat, amelyek finoman tükrözik az épület homlokzatának színeit, miközben elegáns és időtálló megjelenést kölcsönöznek az üvegfelületeknek.", src: "/glassartista/entranceDoor/entranceDoor-6.jpg"},
+        ]
     },
     de: {
         dome: [
@@ -329,6 +338,14 @@ const TEXTS = {
             { src: "/glassartista/ecclesial/ecclesial-7.jpg" },
             { src: "/glassartista/ecclesial/ecclesial-8.jpg" },
         ],
+        entranceDoor: [
+            {title: "Klassische Eingangstür", src: "/glassartista/entranceDoor/entranceDoor-1.jpg"},
+            {paragraph: "Diese besondere Bleiglas-Komposition wurde für das elegante Treppenhaus eines denkmalgeschützten Gebäudes angefertigt.", src: "/glassartista/entranceDoor/entranceDoor-2.jpg"},
+            {paragraph: "In Anlehnung an die hellblaue Farbgebung der Außenfassade des Gebäudes habe ich die Bleiverglasung der Eingangstür sowie die harmonisch darauf abgestimmten Oberlichter und Seitenteile entworfen und gefertigt.", src: "/glassartista/entranceDoor/entranceDoor-3.jpg"},
+            {paragraph: "Das klassische Muster und die zurückhaltende Farbgestaltung unterstreichen den ursprünglichen Charakter und die besondere Atmosphäre des Gebäudes.", src: "/glassartista/entranceDoor/entranceDoor-4.jpg"},
+            {paragraph: "Auch das über dem Haupteingang befindliche Rundfenster wurde von mir gefertigt. Mit seiner Form und Farbgebung bildet es eine harmonische Einheit mit der Bleiverglasung der Eingangstür.", src: "/glassartista/entranceDoor/entranceDoor-5.jpg"},
+            {paragraph: "Für diese Komposition habe ich Spectrum-Gläser in wunderschönen Farbnuancen verwendet, vor allem in Blau-, Grau- und Weißtönen. Diese greifen die Farben der Gebäudefassade auf subtile Weise auf und verleihen den Glasflächen zugleich eine elegante und zeitlose Ausstrahlung.", src: "/glassartista/entranceDoor/entranceDoor-6.jpg"},
+        ]
     },
     en: {
         dome: [
@@ -479,6 +496,14 @@ const TEXTS = {
             { src: "/glassartista/ecclesial/ecclesial-7.jpg" },
             { src: "/glassartista/ecclesial/ecclesial-8.jpg" },
         ],
+        entranceDoor: [
+            {title: "Classic Patterned Entrance Door", src: "/glassartista/entranceDoor/entranceDoor-1.jpg"},
+            {paragraph: "This distinctive stained-glass composition was created for the elegant staircase of a historic listed building.", src: "/glassartista/entranceDoor/entranceDoor-2.jpg"},
+            {paragraph: "Taking inspiration from the light blue colour scheme of the building’s exterior façade, I designed and crafted the stained-glass panels of the entrance door, along with the harmoniously matching transom and sidelights.", src: "/glassartista/entranceDoor/entranceDoor-3.jpg"},
+            {paragraph: "The classic pattern and restrained colour palette are intended to further emphasize the building’s original character and atmosphere.", src: "/glassartista/entranceDoor/entranceDoor-4.jpg"},
+            {paragraph: "The circular window above the main entrance is also my work. Its shape and colour scheme form an integral part of the overall composition, creating a harmonious unity with the stained-glass panels of the door.", src: "/glassartista/entranceDoor/entranceDoor-5.jpg"},
+            {paragraph: "For this composition, I used Spectrum glass, available in a wonderful range of shades, primarily in tones of blue, grey, and white. These subtly reflect the colours of the building’s façade while giving the glass surfaces an elegant and timeless appearance.", src: "/glassartista/entranceDoor/entranceDoor-6.jpg"},
+        ]
     }
 };
 

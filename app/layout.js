@@ -3,6 +3,7 @@ import {Providers} from "@/app/components/Providers";
 import 'animate.css'
 import Footer from "@/app/components/Footer";
 import {Suspense} from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
     title: "Magnólia Tiffanystúdió és építészeti díszüveg",
@@ -28,6 +29,7 @@ export default function RootLayout({children}) {
                 <Suspense>
                     {children}
                     <Footer />
+                    <Analytics />
                 </Suspense>
             </Providers>
         </body>

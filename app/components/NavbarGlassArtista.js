@@ -24,7 +24,7 @@ import {
     FaPhoneAlt
 } from "react-icons/fa";
 
-import {PiAcornFill, PiCardsThreeFill, PiFlowerFill, PiFlowerTulipBold, PiFlowerTulipFill} from "react-icons/pi";
+import {PiAcornFill, PiCardsThreeFill, PiFlowerTulipBold, PiFlowerTulipFill} from "react-icons/pi";
 import {
     GiChestnutLeaf,
     GiCurlingVines,
@@ -34,6 +34,7 @@ import {
     GiLilyPads,
     GiWindowBars
 } from "react-icons/gi";
+import { BsDoorOpenFill } from "react-icons/bs";
 import {IoHammerSharp, IoRose} from "react-icons/io5";
 import {LuLamp, LuLampFloor} from "react-icons/lu";
 import {IoIosGrid} from "react-icons/io";
@@ -93,6 +94,7 @@ export default function NavbarGlassArtista() {
             window: 'Ablak',
             ceiling: 'Mennyezet',
             ecclesial: 'Egyházi üvegek',
+            entranceDoor: 'Bejárati ajtó',
             // details
             engineeringDesign: 'Mérnöki tervezés',
             glasses: 'Üvegek',
@@ -121,6 +123,7 @@ export default function NavbarGlassArtista() {
             window: 'Fenster',
             ceiling: 'Glasdecke',
             ecclesial: 'Kirchenfenster',
+            entranceDoor: 'Klassische Eingangstür',
             // details
             engineeringDesign: 'Ingenieure Planung',
             glasses: 'Gläser',
@@ -149,6 +152,7 @@ export default function NavbarGlassArtista() {
             window: 'Window',
             ceiling: 'Ceiling',
             ecclesial: 'Ecclesial',
+            entranceDoor: 'Entrance door',
             // details
             engineeringDesign: 'Engineering design',
             glasses: 'Glasses',
@@ -282,7 +286,6 @@ export default function NavbarGlassArtista() {
     }
 
     const t = TEXT[currentLocale] || TEXT[DEFAULT_LOCALE];
-    const baseBtnClass = "p-0 bg-transparent border-0 cursor-pointer hover:text-gray-200 transition-colors";
 
     const HOST_PHONE = {
         'glassartista.com': {
@@ -374,7 +377,9 @@ export default function NavbarGlassArtista() {
                                 <DropdownItem key="ceiling" startContent={<BiVerticalTop size={20}/>} className='border-2 border-gray-200'
                                               onClick={() => handleGalleryDropdownClick('ceiling')}>{t.ceiling}</DropdownItem>
                                 <DropdownItem key="ecclesial" startContent={<MdChurch size={20}/>} className='border-2 border-gray-200'
-                                              onClick={() => handleGalleryDropdownClick('ecclesial')}>{t.ceiling}</DropdownItem>
+                                              onClick={() => handleGalleryDropdownClick('ecclesial')}>{t.ecclesial}</DropdownItem>
+                                <DropdownItem key="entranceDoor" startContent={<BsDoorOpenFill size={20}/>} className='border-2 border-gray-200'
+                                              onClick={() => handleGalleryDropdownClick('entranceDoor')}>{t.entranceDoor}</DropdownItem>
                             </DropdownSection>
                             <DropdownSection showDivider title={t.details} classNames={{
                                 group: "grid grid-cols-2 gap-2"
@@ -515,6 +520,8 @@ export default function NavbarGlassArtista() {
                                           onClick={() => handleGalleryDropdownClick('ceiling')}>{t.ceiling}</DropdownItem>
                             <DropdownItem key="ecclesial" startContent={<MdChurch size={20}/>}
                                           onClick={() => handleGalleryDropdownClick('ecclesial')}>{t.ecclesial}</DropdownItem>
+                            <DropdownItem key="entranceDoor" startContent={<BsDoorOpenFill  size={20}/>}
+                                          onClick={() => handleGalleryDropdownClick('entranceDoor')}>{t.entranceDoor}</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
 

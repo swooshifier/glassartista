@@ -31,7 +31,7 @@ Message:
 ${message}
 `,
             });
-        } else if (site === 'glassartista') {
+        } else {
             const transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {
